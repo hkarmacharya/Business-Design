@@ -67,6 +67,7 @@ body {
 .logo img {
     height: 40px;        /* Change this to make your logo bigger or smaller */
     width: auto;
+    display: block;
 }
 
 .nav-links li a {
@@ -78,6 +79,18 @@ body {
 }
 
 .nav-links li a:hover { color: var(--accent); }
+
+.nav-links {
+    display: flex;        /* This puts the items in a row */
+    list-style: none;     /* This removes the black dots */
+    margin: 0;
+    padding: 0;
+    align-items: center;  /* Vertically centers the text with the logo */
+}
+
+.nav-links li {
+    margin-left: 20px;    /* Adds space between each link */
+}
 
 /* --- Hero Section --- */
 .hero {
