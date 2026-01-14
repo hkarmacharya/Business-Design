@@ -59,17 +59,14 @@ body {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
+    display: flex;       /* Helps center the image vertically */
+    align-items: center;
     text-decoration: none;
-    color: var(--primary);
 }
 
-.logo span { color: var(--accent); }
-
-.nav-links {
-    display: flex;
-    list-style: none;
+.logo img {
+    height: 40px;        /* Change this to make your logo bigger or smaller */
+    width: auto;
 }
 
 .nav-links li a {
