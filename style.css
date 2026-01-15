@@ -250,3 +250,58 @@ input, textarea {
     height: 100% !important;
     border: 0;
 }
+
+/* --- Footer Styling --- */
+footer {
+    padding: 3rem 0;
+    background-color: #f9f9f9; /* Optional: light background for footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stacks text and icons vertically */
+    align-items: center;    /* Centers them horizontally */
+    text-align: center;     /* Centers the text lines */
+    gap: 0.5rem;            /* Adds a "break" or space between text and icon */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+    gap: 1rem;               /* Space between multiple icons */
+}
+
+.social-links a {
+    color: red(--primary);
+    font-size: 1.5rem;
+    transition: red(--transition);
+}
+
+.social-links a:hover {
+    color: vred(--accent);
+    transform: translateY(-3px);
+}
+
+.testimonial-item {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    /* This keeps the quote text centered or left */
+    text-align: center; 
+}
+
+.testimonial-item span {
+    display: block;      /* This is required to allow alignment */
+    text-align: right;   /* This pushes the text to the right */
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 10px;
+}
